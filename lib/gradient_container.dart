@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:roll_dice_app/styled_text.dart';
 
 const Alignment startAlignment = Alignment.topLeft;
 const Alignment endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key, required this.gradientColors});
+  
 
   final List<Color> gradientColors;
 
@@ -19,8 +19,11 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment
           ),
       ),
-      child: const Center(
-        child: StyledText('Welcome'),
+      child: Center(
+        child: Image.asset(
+          'assets/images/dice-images/dice-1.png',
+          width: 200,
+        ),
       ),
     );
   }
